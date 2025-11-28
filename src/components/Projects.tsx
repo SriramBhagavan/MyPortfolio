@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 const Projects = () => {
   const projects = [
     {
+<<<<<<< HEAD
       title: "AI Resume Builder – Smart Resume Generator with AI",
       description:
         "AI-powered resume builder that allows users to create, edit, and download resumes effortlessly. Features include authentication, dynamic resume templates, real-time AI enhancement of professional summaries and job descriptions, and secure backend integration with MongoDB and ImageKit.",
@@ -13,12 +14,18 @@ const Projects = () => {
       featured: true,
     },
     {
+=======
+>>>>>>> 01f7dfac32a5690038c53a54ffee149fbe71842b
       title: "DevTinder – Developer Networking Platform",
       description:
         "Full-stack developer networking platform enabling users to connect, chat, and collaborate. Features secure authentication, real-time communication via WebSockets, premium subscriptions with Razorpay, and cloud deployment with AWS.",
       tech: ["MERN Stack", "WebSockets", "Razorpay", "AWS"],
       demoUrl: "http://13.53.197.4/",
+<<<<<<< HEAD
       youtubeUrl: "https://youtu.be/PvTuOHsAL8g",
+=======
+      youtubeUrl: "https://youtu.be/PvTuOHsAL8g", // YouTube demo link
+>>>>>>> 01f7dfac32a5690038c53a54ffee149fbe71842b
       featured: true,
     },
     {
@@ -27,7 +34,11 @@ const Projects = () => {
         "Netflix-inspired web application with AI-powered movie recommendations using React, Redux, TailwindCSS, and TMDB APIs. Features secure authentication, GPT-based movie search, and real-time trailers with multi-language support.",
       tech: ["React", "Redux", "OpenAI", "Firebase", "TMDB API"],
       demoUrl: "https://netflix-chat-gpt.vercel.app",
+<<<<<<< HEAD
       youtubeUrl: "https://youtu.be/IwFCSzteE-o",
+=======
+       youtubeUrl: "https://youtu.be/IwFCSzteE-o",
+>>>>>>> 01f7dfac32a5690038c53a54ffee149fbe71842b
       featured: true,
     },
     {
@@ -36,7 +47,11 @@ const Projects = () => {
         "YouTube clone replicating core features with search suggestion caching, video fetching via YouTube Data API, and responsive UI components. Focused on state management and API optimization.",
       tech: ["React", "Redux Toolkit", "TailwindCSS", "YouTube API"],
       demoUrl: "https://youtube-application-kappa.vercel.app",
+<<<<<<< HEAD
       youtubeUrl: "https://youtu.be/sNc3B8UQqtI",
+=======
+       youtubeUrl: "https://youtu.be/sNc3B8UQqtI",
+>>>>>>> 01f7dfac32a5690038c53a54ffee149fbe71842b
       featured: false,
     },
     {
@@ -45,7 +60,11 @@ const Projects = () => {
         "Swiggy-inspired food ordering app enabling users to browse restaurants, view menus, add items to cart, and place orders. Implements routing, search, filtering, and lazy loading for optimized performance.",
       tech: ["React", "Redux Toolkit", "Tailwind CSS", "REST APIs"],
       demoUrl: "https://swiggy-application.vercel.app",
+<<<<<<< HEAD
       youtubeUrl: "https://youtu.be/F-mlkZfCQWY",
+=======
+       youtubeUrl: "https://youtu.be/F-mlkZfCQWY",
+>>>>>>> 01f7dfac32a5690038c53a54ffee149fbe71842b
       featured: false,
     },
   ];
@@ -54,10 +73,14 @@ const Projects = () => {
     <section id="projects" className="py-20 px-4">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+<<<<<<< HEAD
           Personal{" "}
           <span className="bg-gradient-primary bg-clip-text text-transparent">
             Projects
           </span>
+=======
+          Personal <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
+>>>>>>> 01f7dfac32a5690038c53a54ffee149fbe71842b
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
