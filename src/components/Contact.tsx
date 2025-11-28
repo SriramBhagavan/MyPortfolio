@@ -85,7 +85,7 @@ const Contact = () => {
                 className="bg-gradient-primary hover:shadow-glow transition-all"
               >
                 <a
-                  href="/Bhagavan_resume_2025.pdf"
+                  href="/Bhagavan_resume_v2.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
