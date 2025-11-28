@@ -18,11 +18,7 @@ const Skills = () => {
     },
     {
       title: "Deployment & Cloud",
-<<<<<<< HEAD
       skills: ["AWS", "Vercel", "Render", "Netlify"],
-=======
-      skills: ["AWS", "Vercel"],
->>>>>>> 01f7dfac32a5690038c53a54ffee149fbe71842b
     },
     {
       title: "Testing",

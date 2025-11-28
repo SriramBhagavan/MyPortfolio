@@ -1,6 +1,7 @@
 import { Mail, Linkedin, Phone, FileText } from "lucide-react";
 import { Button } from "./ui/button";
-import bhagavanResume from "@/assets/Eatha_K_V_V_S_S_Rama_Bhagavan_Resume.pdf";
+
+
 const Contact = () => {
   const contactInfo = [
     {
@@ -61,24 +62,20 @@ const Contact = () => {
 
             <div className="flex justify-center">
               <Button
-  asChild
-  size="lg"
-  className="bg-gradient-primary hover:shadow-glow transition-all"
->
-  <a
-<<<<<<< HEAD
-    href="/Bhagavan_resume_v2.pdf"
-=======
-    href="/Bhagavan_resume_2025.pdf"
->>>>>>> 01f7dfac32a5690038c53a54ffee149fbe71842b
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2"
-  >
-    <FileText className="w-5 h-5" />
-    View Resume
-  </a>
-</Button>
+                asChild
+                size="lg"
+                className="bg-gradient-primary hover:shadow-glow transition-all"
+              >
+                <a
+                  href="/Bhagavan_resume_v2.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  <FileText className="w-5 h-5" />
+                  View Resume
+                </a>
+              </Button>
             </div>
           </div>
         </div>
