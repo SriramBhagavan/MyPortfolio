@@ -16,28 +16,27 @@ const About = () => {
             </div>
 
             <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-              I'm a <span className="text-primary font-semibold">Senior Engineer – IT</span> with 
-              2 years of experience delivering technology-driven projects in the airport domain. 
-              My expertise lies in <span className="text-primary font-semibold">full stack web development</span> using 
-              the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS).
+              I'm a <span className="text-primary font-semibold">Full Stack Developer</span> with 3
+              years of experience building and deploying production web applications at Hyderabad
+              International Airport using{" "}
+              <span className="text-primary font-semibold">React, Node.js and PostgreSQL on Azure</span>.
             </p>
 
             <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-              I excel at leading project execution, coordinating with vendors, and deploying 
-              digital solutions across multiple stakeholders. My work at GMR Group has enabled 
-              me to create real-time dashboards and systems that improve airport operations 
-              and passenger experience.
+              I take applications from requirements to a live, supported system: development,
+              testing, security clearance (SAST/VAPT), Docker-based deployment on Linux and 24/7
+              support. I also use AI coding tools like Claude Code and OpenAI Codex every day.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="bg-background/50 rounded-xl p-6 border border-border">
                 <h3 className="text-xl font-semibold mb-3 text-primary">Professional Focus</h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Full Stack Development (MERN)</li>
-                  <li>• IT Project Management</li>
-                  <li>• System Integration</li>
-                  <li>• Real-time Dashboards</li>
-                  <li>• Cloud Deployment (AWS)</li>
+                  <li>• Full Stack Development (React, Node.js)</li>
+                  <li>• Secure Web Applications (SAST / VAPT)</li>
+                  <li>• Cloud Deployment (Azure, AWS)</li>
+                  <li>• Docker, Nginx &amp; Linux</li>
+                  <li>• AI-Assisted Development</li>
                 </ul>
               </div>
 

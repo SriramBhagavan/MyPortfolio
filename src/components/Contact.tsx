@@ -85,13 +85,12 @@ const Contact = () => {
                 className="bg-gradient-primary hover:shadow-glow transition-all"
               >
                 <a
-                  href="/Bhagavan_resume_v2.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="Bhagavan_resume_v2.pdf"
+                  download
                   className="flex items-center gap-2"
                 >
                   <FileText className="w-5 h-5" />
-                  View Resume
+                  Download Resume
                 </a>
               </Button>
             </div>

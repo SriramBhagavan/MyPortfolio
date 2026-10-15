@@ -2,54 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Design system. Colors are HSL. Dark is the default, `.light` on <html> switches theme. */
 
 @layer base {
   :root {
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
+    --background: 228 50% 8%;
+    --foreground: 226 100% 95%;
 
-    --card: 222 47% 14%;
-    --card-foreground: 210 40% 98%;
+    --card: 228 40% 13%;
+    --card-foreground: 226 100% 95%;
 
-    --popover: 222 47% 14%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 228 40% 13%;
+    --popover-foreground: 226 100% 95%;
 
-    --primary: 217 91% 60%;
-    --primary-foreground: 222 47% 11%;
-    --primary-glow: 217 91% 70%;
+    --primary: 234 89% 74%;
+    --primary-foreground: 228 50% 8%;
+    --primary-glow: 188 86% 53%;
 
-    --secondary: 263 70% 60%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 188 86% 53%;
+    --secondary-foreground: 228 50% 8%;
 
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 228 35% 17%;
+    --muted-foreground: 228 24% 68%;
 
-    --accent: 280 80% 55%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 158 64% 52%;
+    --accent-foreground: 228 50% 8%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217 33% 25%;
-    --input: 217 33% 20%;
-    --ring: 217 91% 60%;
+    --border: 228 30% 24%;
+    --input: 228 30% 20%;
+    --ring: 234 89% 74%;
 
-    --radius: 0.75rem;
+    --radius: 0.9rem;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(263 70% 60%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60% / 0.1) 0%, hsl(263 70% 60% / 0.1) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(222 47% 14% / 0.8) 0%, hsl(222 47% 16% / 0.8) 100%);
-    
+    --gradient-primary: linear-gradient(135deg, hsl(243 75% 59%) 0%, hsl(199 89% 40%) 100%);
+    --gradient-text: linear-gradient(135deg, hsl(234 89% 76%) 0%, hsl(188 86% 55%) 55%, hsl(158 64% 58%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(243 75% 59% / 0.07) 0%, hsl(199 89% 48% / 0.05) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(228 40% 16% / 0.72) 0%, hsl(228 40% 11% / 0.72) 100%);
+
     /* Shadows */
-    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
-    --shadow-card: 0 8px 32px hsl(222 47% 8% / 0.4);
-    
-    /* Transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-glow: 0 10px 40px hsl(243 75% 59% / 0.35);
+    --shadow-card: 0 12px 36px hsl(228 60% 3% / 0.45);
+
+    --nav-bg: 228 50% 8% / 0.75;
+    --grid-line: 0 0% 100% / 0.035;
+    --orb-opacity: 0.45;
+  }
+
+  :root.light {
+    --background: 228 100% 98%;
+    --foreground: 230 50% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 230 50% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 50% 14%;
+
+    --primary: 243 75% 52%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 199 89% 38%;
+
+    --secondary: 199 89% 38%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 228 40% 94%;
+    --muted-foreground: 228 20% 36%;
+
+    --accent: 160 84% 30%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 228 30% 87%;
+    --input: 228 30% 90%;
+    --ring: 243 75% 52%;
+
+    --gradient-text: linear-gradient(135deg, hsl(243 75% 52%) 0%, hsl(199 89% 36%) 55%, hsl(160 84% 30%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(243 75% 59% / 0.06) 0%, hsl(199 89% 48% / 0.04) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.92) 0%, hsl(228 60% 98% / 0.92) 100%);
+
+    --shadow-glow: 0 10px 34px hsl(243 75% 52% / 0.25);
+    --shadow-card: 0 10px 30px hsl(228 50% 30% / 0.1);
+
+    --nav-bg: 228 100% 98% / 0.8;
+    --grid-line: 228 50% 30% / 0.06;
+    --orb-opacity: 0.28;
   }
 }
 
@@ -58,7 +97,127 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    overflow-x: hidden;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.3);
+  }
+}
+
+/* Gradient headings use the brighter text gradient */
+.bg-gradient-primary.bg-clip-text {
+  background-image: var(--gradient-text);
+}
+
+/* Section title underline accent */
+section > .container > h2:first-child::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin: 14px auto 0;
+  border-radius: 4px;
+  background: var(--gradient-primary);
+}
+
+/* Glass cards */
+.bg-gradient-card {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.bg-gradient-card:hover {
+  border-color: hsl(var(--primary) / 0.5);
+}
+
+/* Animated background */
+.bg-orbs {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.bg-orbs .orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: var(--orb-opacity);
+  animation: orb-float 18s ease-in-out infinite;
+}
+.bg-orbs .o1 {
+  width: 480px;
+  height: 480px;
+  background: #6366f1;
+  top: -120px;
+  left: -100px;
+}
+.bg-orbs .o2 {
+  width: 420px;
+  height: 420px;
+  background: #06b6d4;
+  top: 32%;
+  right: -120px;
+  animation-delay: -6s;
+}
+.bg-orbs .o3 {
+  width: 380px;
+  height: 380px;
+  background: #22d3a6;
+  bottom: -120px;
+  left: 30%;
+  animation-delay: -12s;
+}
+.bg-orbs .grid-lines {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(hsl(var(--grid-line)) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--grid-line)) 1px, transparent 1px);
+  background-size: 44px 44px;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 20%, #000 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse at 50% 20%, #000 30%, transparent 75%);
+}
+@keyframes orb-float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(40px, 50px) scale(1.12);
+  }
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
   }
 }

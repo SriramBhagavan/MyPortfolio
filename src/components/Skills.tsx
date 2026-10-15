@@ -1,28 +1,33 @@
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
-      skills: ["HTML5", "CSS3", "JavaScript", "ReactJS", "Tailwind CSS"],
+      title: "Frontend",
+      skills: ["React.js", "Material UI", "JavaScript (ES6+)", "HTML5", "CSS3"],
     },
     {
-      title: "Backend Development",
-      skills: ["NodeJS", "ExpressJS"],
+      title: "Backend & Databases",
+      skills: [
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "PostgreSQL",
+        "Prisma ORM",
+        "JWT Authentication",
+        "LDAP / Active Directory",
+        "SMTP",
+      ],
     },
     {
-      title: "Database",
-      skills: ["MongoDB"],
+      title: "Cloud & DevOps",
+      skills: ["Azure", "AWS", "Linux", "Docker", "Docker Compose", "Nginx", "Git", "GitHub", "DNS"],
     },
     {
-      title: "Tools & Platforms",
-      skills: ["GitHub", "VS Code", "Postman"],
+      title: "Security",
+      skills: ["SAST", "VAPT Remediation", "RBAC", "Rate Limiting", "Secure File Uploads"],
     },
     {
-      title: "Deployment & Cloud",
-      skills: ["AWS", "Vercel", "Render", "Netlify"],
-    },
-    {
-      title: "Testing",
-      skills: ["Manual Testing"],
+      title: "AI & Tools",
+      skills: ["Claude Code", "OpenAI Codex", "Prompt Engineering", "Postman", "VS Code"],
     },
   ];
 
